@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mock_Class_Name_required_when_Use_Mock</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(Use_Mock_Class__c = true, Len(Mock_Class_Name__c) = 0)</errorConditionFormula>
+    <errorMessage>You need to enter a Mock Class Name when you select the Use Mock function</errorMessage>
+</ValidationRule>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Julian Date</fullName>
+        <default>false</default>
+        <label>Julian Date</label>
+    </customValue>
+    <customValue>
+        <fullName>DD/MM/YYYY</fullName>
+        <default>false</default>
+        <label>DD/MM/YYYY</label>
+    </customValue>
+    <customValue>
+        <fullName>MM/DD/YYYY</fullName>
+        <default>false</default>
+        <label>MM/DD/YYYY</label>
+    </customValue>
+    <customValue>
+        <fullName>Y/N</fullName>
+        <default>false</default>
+        <label>Y/N</label>
+    </customValue>
+    <customValue>
+        <fullName>True/False</fullName>
+        <default>false</default>
+        <label>True/False</label>
+    </customValue>
+    <customValue>
+        <fullName>Custom</fullName>
+        <default>false</default>
+        <label>Custom</label>
+    </customValue>
+    <masterLabel>Integration Conversion Types</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

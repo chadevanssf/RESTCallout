@@ -52,6 +52,14 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>ControlledByParent</externalSharingModel>
+    <label>Integration Output</label>
+    <nameField>
+        <label>Integration Output Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Integration Outputs</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
     <fields>
         <fullName>External_Id__c</fullName>
         <defaultValue>false</defaultValue>
@@ -164,18 +172,10 @@
         <type>Number</type>
         <unique>false</unique>
     </fields>
-    <label>Integration Output</label>
-    <nameField>
-        <label>Integration Output Name</label>
-        <type>Text</type>
-    </nameField>
-    <pluralLabel>Integration Outputs</pluralLabel>
-    <searchLayouts/>
-    <sharingModel>ControlledByParent</sharingModel>
     <validationRules>
         <fullName>Custom_Field_Conversion</fullName>
         <active>true</active>
-        <errorConditionFormula>AND(IsPickVal(Field_Conversion__c,&apos;Custom&apos;), Len(Field_Conversion_Custom__c) = 0)</errorConditionFormula>
+        <errorConditionFormula>AND(IsPickVal(Field_Conversion__c,'Custom'), Len(Field_Conversion_Custom__c) = 0)</errorConditionFormula>
         <errorMessage>If you select Custom for he Field Conversion then please specify the class name for the field conversion.</errorMessage>
     </validationRules>
 </CustomObject>

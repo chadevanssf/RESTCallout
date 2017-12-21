@@ -52,6 +52,14 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>ReadWrite</externalSharingModel>
+    <label>Integration Definition</label>
+    <nameField>
+        <label>Integration Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Integration Definitions</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
     <fields>
         <fullName>Collection_Name__c</fullName>
         <externalId>false</externalId>
@@ -182,23 +190,15 @@
         <type>Text</type>
         <unique>false</unique>
     </fields>
-    <label>Integration Definition</label>
-    <listViews>
-        <fullName>All</fullName>
-        <filterScope>Everything</filterScope>
-        <label>All</label>
-    </listViews>
-    <nameField>
-        <label>Integration Name</label>
-        <type>Text</type>
-    </nameField>
-    <pluralLabel>Integration Definitions</pluralLabel>
-    <searchLayouts/>
-    <sharingModel>ReadWrite</sharingModel>
     <validationRules>
         <fullName>Mock_Class_Name_required_when_Use_Mock</fullName>
         <active>true</active>
         <errorConditionFormula>AND(Use_Mock_Class__c = true, Len(Mock_Class_Name__c) = 0)</errorConditionFormula>
         <errorMessage>You need to enter a Mock Class Name when you select the Use Mock function</errorMessage>
     </validationRules>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
 </CustomObject>

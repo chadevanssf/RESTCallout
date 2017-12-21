@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>If_Fixed_then_Fixed_Value_is_required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(Fixed__c = true, Len(Fixed_Value__c) = 0)</errorConditionFormula>
+    <errorMessage>When the fixed checkbox is checked you need to enter a value for the fixed value.</errorMessage>
+</ValidationRule>
